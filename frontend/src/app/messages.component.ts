@@ -10,7 +10,7 @@ import { WebService } from './web.service';
     // *ng will for loop
     template: `
     <div *ngFor="let message of messages">
-        <mat-card style="margin:8px">
+        <mat-card class="card">
             <mat-card-title>{{ message.owner}}</mat-card-title>
             <mat-card-content>{{message.text}}</mat-card-content>
         </mat-card>
@@ -28,7 +28,7 @@ export class MessagesComponent {
     async ngOnInit() {
         // tslint:disable-next-line:no-var-keyword
         // tslint:disable-next-line:prefer-const no-var-keyword
-        var response = await this.webService.getMessages();
+        var response = await this.webService.getMessages(); // gets messages from back end
         // tslint:disable-next-line:prefer-const no-var-keyword
         let parse = response.json();
         this.messages = parse;
