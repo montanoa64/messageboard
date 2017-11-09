@@ -1,0 +1,2 @@
+####COMPONENTS#####
+they will allow us to create different view which we will then use to post and display messages
