@@ -1,5 +1,5 @@
 // import component library
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component} from '@angular/core';
 
 import { WebService } from './web.service';
 // decorator will allow to mark the class as components and provide metadata on how components behave
@@ -23,8 +23,7 @@ import { WebService } from './web.service';
     `
 })
 export class NewMessageComponent {
-    // in app.compenents there is an event listening for this onPosted
-    @Output() onPosted = new EventEmitter();
+    
     // constructor. inject webservice into it
     constructor(private webService: WebService) {
     }
@@ -36,7 +35,7 @@ export class NewMessageComponent {
     // function to post the messages
     post() {
         this.webService.postMessage(this.message);
-        this.onPosted.emit(this.message);
+
     }
 }
 // new way of doing things i guess

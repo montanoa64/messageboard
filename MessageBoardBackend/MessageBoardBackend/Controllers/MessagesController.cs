@@ -33,9 +33,10 @@ namespace MessageBoardBackend.Controllers
         // post function
         // decorate to let browser know is post function
         [HttpPost]
-        public void Post([FromBody] Models.Message message) {
+        public Models.Message Post([FromBody] Models.Message message) {
             // add the message posted from body to messages array
             messages.Add(message);
+            return message;
         }
     }
 }
