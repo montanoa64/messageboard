@@ -10,8 +10,8 @@ import { NewMessageComponent } from './new-message.component';
   selector: 'app-root',
   template: `
   <h1>Message Board</h1>
-  <new-message></new-message>
   <messages></messages>
+  <new-message></new-message>
   `,
   styleUrls: ['./app.component.css']
 })

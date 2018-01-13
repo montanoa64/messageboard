@@ -28,10 +28,10 @@ export class NewMessageComponent {
     constructor(private webService: WebService) {
     }
     message = {
-        owner: 'test',
+        owner: '',
         text: '',
     };
-    owner = 'test';
+   // owner = 'test';
     // function to post the messages
     post() {
         this.webService.postMessage(this.message);
