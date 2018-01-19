@@ -2,36 +2,38 @@ import { Http } from '@angular/http';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import {MAT_SNACK_BAR_DATA} from '@angular/material';
 import 'rxjs/add/operator/toPromise';
+import { Subject } from 'rxjs/Subject';
 import { Injectable, Output } from '@angular/core';
 
 @Injectable()
 
 export class WebService {
     BASE_URL = 'http://localhost:53205/api';
-    messages = [];
+    private messagesStore = [];
+    private messageSubjet = new Subject();
+    messages = this.messageSubjet.asObservable();
     // class constructor
     // save local reference that we will access inside our get message function
     constructor(private http: Http, private sb: MatSnackBar) {
         this.getMessages();
     }
     // return messages with http call
-    async getMessages() {
+    getMessages(user) {
         // call get function to get the messages with an api call
-
-        try {
-            let response = await this.http.get(this.BASE_URL + '/messages').toPromise();
-            this.messages = response.json();
-            //this.messages.reverse();
-        } catch (error) {
-           this.handleError('Unable to get message');
-        }
-
+            user = (user) ? '/' + user : '';
+            this.http.get(this.BASE_URL + '/messages' + user).subscribe(response => {
+                this.messagesStore = response.json();
+                this.messageSubjet.next(this.messagesStore);
+            }, error => {
+                this.handleError('Unable to get message');
+            });
     }
     // to post message
     async postMessage(message) {
         try {
             let response = await this.http.post(this.BASE_URL + '/messages', message).toPromise();
-        this.messages.push(response.json());
+            this.messagesStore.push(response.json());
+            this.messageSubjet.next(this.messagesStore);
         } catch (error) {
             this.handleError('Unable to post message');
         }
