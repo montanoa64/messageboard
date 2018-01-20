@@ -6,7 +6,7 @@ import { WebService } from './web.service';
 // decorator will allow to mark the class as components and provide metadata on how components behave
 @Component({
     // this will make the <messages></messages>
-    selector: getSelector(),    
+    selector: getSelector(),
     // getting messages.length from the array in MessagesComponent
     // *ng will for loop
     template: `
@@ -22,9 +22,10 @@ export class MessagesComponent {
     // constructor. inject webservice into it
     constructor(private webService: WebService, private route: ActivatedRoute) {
     }
-    ngOnInit(){
-        let name = (this.route.snapshot.params.name);
+    ngOnInit() {
+        const name = (this.route.snapshot.params.name);
         this.webService.getMessages(name);
+        this.webService.getUser().subscribe();
     }
 }
 // new way of doing things i guess

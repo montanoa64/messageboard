@@ -1,0 +1,11 @@
+C:\Users\MyCigga\Documents\Visual Studio 2017\Projects\messageboard\MessageBoardBackend\MessageBoardBackend\bin\Debug\netcoreapp1.1\MessageBoardBackend.deps.json
+C:\Users\MyCigga\Documents\Visual Studio 2017\Projects\messageboard\MessageBoardBackend\MessageBoardBackend\bin\Debug\netcoreapp1.1\MessageBoardBackend.runtimeconfig.json
+C:\Users\MyCigga\Documents\Visual Studio 2017\Projects\messageboard\MessageBoardBackend\MessageBoardBackend\bin\Debug\netcoreapp1.1\MessageBoardBackend.runtimeconfig.dev.json
+C:\Users\MyCigga\Documents\Visual Studio 2017\Projects\messageboard\MessageBoardBackend\MessageBoardBackend\bin\Debug\netcoreapp1.1\MessageBoardBackend.dll
+C:\Users\MyCigga\Documents\Visual Studio 2017\Projects\messageboard\MessageBoardBackend\MessageBoardBackend\bin\Debug\netcoreapp1.1\MessageBoardBackend.pdb
+C:\Users\MyCigga\Documents\Visual Studio 2017\Projects\messageboard\MessageBoardBackend\MessageBoardBackend\obj\Debug\netcoreapp1.1\MessageBoardBackend.csprojResolveAssemblyReference.cache
+C:\Users\MyCigga\Documents\Visual Studio 2017\Projects\messageboard\MessageBoardBackend\MessageBoardBackend\obj\Debug\netcoreapp1.1\MessageBoardBackend.AssemblyInfo.cs
+C:\Users\MyCigga\Documents\Visual Studio 2017\Projects\messageboard\MessageBoardBackend\MessageBoardBackend\obj\Debug\netcoreapp1.1\MessageBoardBackend.dll
+C:\Users\MyCigga\Documents\Visual Studio 2017\Projects\messageboard\MessageBoardBackend\MessageBoardBackend\obj\Debug\netcoreapp1.1\MessageBoardBackend.pdb
+C:\Users\MyCigga\Documents\Visual Studio 2017\Projects\messageboard\MessageBoardBackend\MessageBoardBackend\obj\Debug\netcoreapp1.1\MessageBoardBackend.csproj.CoreCompileInputs.cache
+C:\Users\MyCigga\Documents\Visual Studio 2017\Projects\messageboard\MessageBoardBackend\MessageBoardBackend\obj\Debug\netcoreapp1.1\MessageBoardBackend.AssemblyInfoInputs.cache

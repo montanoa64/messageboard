@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\MyCigga\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\MyCigga\\.nuget\\packages"
+    ]
+  }
+}
