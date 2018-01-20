@@ -13,7 +13,6 @@ import {
  import { HttpModule } from '@angular/http';
  import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-
 import { AppComponent } from './app.component';
 import { MessagesComponent } from './messages.component';
 import { WebService } from './web.service';
@@ -23,6 +22,8 @@ import { NavComponent } from './nav.component';
 import { Router } from '@angular/router/src/router';
 import { HomeComponent } from './home.component';
 import { RegisterComponent } from './register.component';
+import { LoginComponent } from './login.component';
+
 
 
 const routes = [{
@@ -38,6 +39,9 @@ const routes = [{
 }, {
   path: 'register',
   component: RegisterComponent
+}, {
+  path: 'login',
+  component: LoginComponent
 }];
 
 
@@ -50,7 +54,8 @@ const routes = [{
     NewMessageComponent,
     NavComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
